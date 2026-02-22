@@ -1,29 +1,34 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+    collapse = TRUE,
+    comment = "#>"
+)
+```
 
 # rWCVPdata
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/matildabrown/rWCVPdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/matildabrown/rWCVPdata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-rWCVPdata is a data package that redistributes snapshots of the World
-Checklist of Vascular Plants (WCVP) database so it is easier to load
-into R.
+rWCVPdata is a data package that redistributes snapshots of the World Checklist of Vascular Plants (WCVP) database so it is easier to load into R.
 
 ## Installation
 
-You can install the released version of rWCVPdata from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the released version of rWCVPdata from [CRAN](https://CRAN.R-project.org) with:
 
-``` r
+```r
 install.packages("rWCVPdata")
 ```
 
 Or you can add our data repository to your repo list first:
-
-``` r
+```r
 r <- getOption("repos")
 r["matildabrown"] <- "https://matildabrown.github.io/drat"
 options(repos=r)
@@ -31,8 +36,7 @@ options(repos=r)
 install.packages("rWCVPdata")
 ```
 
-You can install the latest development version of rWCVPdata from
-[GitHub](https://github.com/) with:
+You can install the latest development version of rWCVPdata from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -41,11 +45,9 @@ devtools::install_github("matildabrown/rWCVPdata")
 
 ## Citation
 
-If you use rWCVPdata, please cite the snapshot of the database you used
-and the paper describing WCVP.
+If you use rWCVPdata, please cite the snapshot of the database you used and the paper describing WCVP.
 
 You can find out how to cite these by running:
-
 ``` r
 citation("rWCVPdata")
 ```

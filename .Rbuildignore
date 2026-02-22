@@ -7,3 +7,4 @@
 ^pkgdown$
 ^\.agent$
 ^cran-comments\.md$
+^README\.Rmd$
